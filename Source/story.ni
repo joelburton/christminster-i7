@@ -36,6 +36,7 @@ When play begins:
 	say "Foo!";
 	Pause the game;
 	say "[paragraph break][paragraph break]You haven't seen your brother Malcolm since he received his fellowship at Biblioll College - pressure of work was his excuse not to come down to London. So when you received that telegram from him you leapt at the excuse to come up to the university town of Christminster for the day and visit him.";
+	now the right hand status line is "Time: [time of day]"
 	
 Instead of examining the uncrumpled telegram, say "The telegram reads, 'Dearest Christabel. Work goes well. Amazing discovery in prospect. Come at once. Will tell all when you arrive on Sunday. Your dearest brother, Malcolm Spencer'."
 
@@ -43,13 +44,15 @@ Instead of examining a crumpled paper, say "It's too crumpled to examine."
 
 Instead of jumping, say "[one of]red[or]green[or]blue[then at random]."
 
+Definition: a time is afternoon rather than morning if it is at least 9:10 AM.
+
 Book 1 - Outside College
 
 Outside College is a region. Chapel Street, Bridge Street, Biblliol Street, and Lady Margaret Green are in Outside College.
 
 North of Chapel Street is west of Bridge Street. East of Bridge Street is north of Lady Margaret Green. South of Lady Margaret Green is east of Biblliol Street. West of Biblliol Street is south of Chapel Street.
 
-Instead of smelling in Outside College, say "The summer air is sweet and thick."
+Instead of smelling in Outside College, say "The summer [if time of day is morning]morning[else]afternoon[end if] air is sweet and thick."
 
 Part 1 - Chapel Street
 
