@@ -1,6 +1,47 @@
 "Christminster" by Joel Burton
 
+Include Basic Screen Effects by Emily Short.
+
 Throwing is an action applying to two visible things. Understand "throw [something] at [something]" as throwing.
+
+The player is holding a bag. The bag is a closed openable container. The description of the bag is "A gift from your grandmother, who seems to have thought that no respectable young woman should be seen about town without her crocodile-skin handbag." Understand "handbag", "purse", "crocodile" and "crocodile-skin" as the bag.
+
+A paper is a kind of thing. The telegram is a paper. The map is a paper. A paper can be crumpled or uncrumpled. A paper is usually uncrumpled. The map and the telegram are in the bag.
+
+Instead of examining the uncrumpled map:
+	 say "[fixed letter spacing][line break
+]                         Bridge Street[line break
+]  ._________________________________________________________. L[line break
+]  |                                    |           /~~/     | a[line break
+]C |      A Staircase  Chapel    Chapel |          /~~/  N   | d[line break
+]h |       ._________.  Tower ._________|         |~~|   |   | y[line break
+]a |Porters|         |        |         . Gardens |~~| W-+-E |[line break
+]p | Lodge |         |        |         .         |~~|   |   | M[line break
+]e |       |         |Master’s|         .         |~~|   S   | a[line break
+]l |_______|  First  |Lodgings| Second  .________. \~~\      | r[line break
+]  |          Court  |________|  Court  |        |  \~~\     | g[line break
+]S | Great                    .         |   C    |  Biblioll | a[line break
+]t |  Gate            Archway .         | Stair- |    Drain  | r[line break
+]r |_______.    ._______________________|  Case  |     \~~\  | e[line break
+]e |       |Arch|                                |     |~~|  | t[line break
+]e |       |_way|               Great     Senior |     /~~/  |[line break
+]t |              B Staircase    Hall     Common |    /~~/   | G[line break
+]  |   Library                & Kitchens   Room  |   |~~|    | r[line break
+]  |_____________________________________________|___|~~|____| e[line break
+]                                                              e[line break
+]                        Biblioll Street                       n[line break
+]".
+
+When play begins:
+	say "Foo!";
+	Pause the game;
+	say "[paragraph break][paragraph break]You haven't seen your brother Malcolm since he received his fellowship at Biblioll College - pressure of work was his excuse not to come down to London. So when you received that telegram from him you leapt at the excuse to come up to the university town of Christminster for the day and visit him.";
+	
+Instead of examining the uncrumpled telegram, say "The telegram reads, 'Dearest Christabel. Work goes well. Amazing discovery in prospect. Come at once. Will tell all when you arrive on Sunday. Your dearest brother, Malcolm Spencer'."
+
+Instead of examining a crumpled paper, say "It's too crumpled to examine."
+
+Instead of jumping, say "[one of]red[or]green[or]blue[then at random]."
 
 Book 1 - Outside College
 
@@ -23,6 +64,9 @@ Instead of searching or examining the loose cobble once:
 Instead of searching or examining the loose cobble [after the first time...]:
 	say "There was only one loose stone."
 
+Report going from Chapel Street the first time:
+	say "cobble loose."
+	
 Part 2 - Lady Margaret Green
 
 There is a man called a don. He is in Lady Margaret Green. "There is a man sleeping here." The printed name of the don is "man". Understand "sleeping", "man" as the don.
@@ -49,7 +93,16 @@ Every turn when the location is Biblliol Street and the constable is not in Bibl
 
 Part 4 - Bridge Street
 
+The busker is a man in Bridge Street.
+
+Instead of giving a paper (called the given paper) to the busker:
+	now the given paper is crumpled;
+	move the given paper to the busker;
+	say "He folds [the given paper] up."
+		
 The constable is a man in Bridge Street.
+
+Instead of giving a paper to the constable, say "The constable looks confused. 'Oh, I don't need any of your papers'."
 
 Book 2 - First Court
 
